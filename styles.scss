@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: $VeryLightGray;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+    h1 {
+      font-size: 25px;
+      color: $VeryDarkBlue;
+      &:first-child {
+        font-weight: 200;
+      }
+    }
+    h3 {
+      font-size: 12px;
+      text-align: center;
+      display: inline-block;
+      width: 40%;
+      color: $GrayishBlue;
+      font-weight: 400;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-gap: 10px;
+    .one {
+      border-top: 3px solid $Cyan;
+      border-radius: 10px;
+      box-shadow: 3px 12px 40px -20px $GrayishBlue;
+      padding: 15px 15px;
+      width: 90%;
+      transform: translateY(100px);
+      h4 {
+        margin-bottom: 10px;
+        color: $VeryDarkBlue;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 12px;
+        display: inline-block;
+        width: 80%;
+        color: $GrayishBlue;
+      }
+      img {
+        display: block;
+        transform: translateX(200px);
+      }
+    }
+    .two {
+      border-top: 3px solid $Red;
+      border-radius: 10px;
+      box-shadow: 3px 12px 40px -20px $GrayishBlue;
+      padding: 15px 15px;
+      width: 90%;
+      h4 {
+        margin-bottom: 10px;
+        color: $VeryDarkBlue;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 12px;
+        display: inline-block;
+        width: 80%;
+        color: $GrayishBlue;
+      }
+      img {
+        display: block;
+        transform: translateX(200px);
+      }
+    }
+    .three {
+      border-top: 3px solid $Blue;
+      border-radius: 10px;
+      box-shadow: 3px 12px 40px -20px $GrayishBlue;
+      padding: 15px 15px;
+      width: 90%;
+      transform: translateY(100px);
+      h4 {
+        margin-bottom: 10px;
+        color: $VeryDarkBlue;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 12px;
+        display: inline-block;
+        width: 80%;
+        color: $GrayishBlue;
+      }
+      img {
+        display: block;
+        transform: translateX(200px);
+      }
+    }
+    .four {
+      margin-top: 30px;
+      border-top: 3px solid $Orange;
+      grid-area: 2/2/3/3;
+      border-radius: 10px;
+      box-shadow: 3px 12px 40px -20px $GrayishBlue;
+      padding: 15px 15px;
+      width: 90%;
+      h4 {
+        margin-bottom: 10px;
+        color: $VeryDarkBlue;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 12px;
+        display: inline-block;
+        width: 80%;
+        color: $GrayishBlue;
+      }
+      img {
+        display: block;
+        transform: translateX(200px);
+      }
+    }
+  }
+}
